@@ -70,9 +70,24 @@ export default async () => {
   const page = await browser.newPage();
   await page.goto("chrome://newtab");
   await page.waitForTimeout(3000);
-  await page.screenshot({ path: "build/newtab.png" });
+
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.screenshot({ path: "build/screenshot.png" });
+
+  await page.setViewportSize({ width: 1400, height: 560 });
+  await page.screenshot({ path: "build/marquee_promo_tiles.png" });
+
   await browser.close();
   fs.rmSync(temp, { recursive: true, force: true });
+
+  await sharp("build/screenshot.png")
+    .extract({
+      left: 1280 / 2 - 440 / 2,
+      top: 800 / 2 - 280 / 2,
+      width: 440,
+      height: 280,
+    })
+    .toFile("build/promo_tile.png");
 
   const output = fs.createWriteStream(`build/${packageJson.name}.zip`);
   const archive = archiver("zip", { zlib: { level: 9 } });
