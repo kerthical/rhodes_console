@@ -36,7 +36,7 @@ the [discussions](https://github.com/kerthical/rhodes_console/discussions).
 6. Select the folder you just unzipped
 7. Enjoy!
 
-## From source code
+### From source code
 
 ```bash
 git clone https://github.com/kerthical/rhodes_console
