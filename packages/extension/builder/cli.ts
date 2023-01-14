@@ -4,7 +4,7 @@ import fs from "fs";
 import sharp from "sharp";
 import archiver from "archiver";
 
-(async () => {
+export default async () => {
   execSync("next build", { stdio: "ignore" });
   execSync("next export -o build/dist", { stdio: "ignore" });
 
@@ -79,4 +79,4 @@ import archiver from "archiver";
   archive.pipe(output);
   archive.directory("build/dist", false);
   await archive.finalize();
-})();
+};
