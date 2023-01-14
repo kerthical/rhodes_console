@@ -5,11 +5,13 @@ Chrome Extension for Arknights fans. New tab screen will be changed.
 ## Features
 
 - [x] Random Background
+- [ ] Logo animation
+- [ ] Particles animation
 - [ ] Random Operator
     - [ ] standing picture
     - [ ] voice
 - [ ] Greetings to <doctor's name>
-- [ ] Latest News
+- [ ] Latest news
 - [ ] Currently active event
 
 If there are other features you would like to see implemented, please let us know in
