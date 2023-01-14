@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { execSync } from "child_process";
 import { chromium } from "playwright";
 import fs from "fs";
