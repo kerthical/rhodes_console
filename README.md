@@ -2,9 +2,13 @@
 
 Chrome Extension for Arknights fans. New tab screen will be changed.
 
+**Notice: This plugin is fan-made and not official. It is a work in progress and features may be subject to destructive changes
+or removal without notice.**
+
 ## Features
 
 - [x] Random Background
+- [ ] Language selector
 - [ ] Logo animation
 - [ ] Particles animation
 - [ ] Random Operator
