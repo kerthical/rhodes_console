@@ -1,4 +1,9 @@
-# Rhodes Console
+<p align="center">
+  <picture>
+    <img src="packages/extension/icon.png" height="128">
+  </picture>
+  <h1 align="center">Rhodes Console</h1>
+</p>
 
 Chrome Extension for Arknights fans. New tab screen will be changed.
 
