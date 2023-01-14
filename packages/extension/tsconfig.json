@@ -1,0 +1,17 @@
+{
+    "extends": "config/tsconfig.json",
+    "compilerOptions": {
+      "module": "ESNext",
+      "jsx": "preserve",
+      "lib": ["ESNext", "DOM", "DOM.Iterable"],
+      "resolveJsonModule": true,
+      "noEmit": true,
+      "allowJs": true,
+      "incremental": true,
+      "paths": {
+        "@/*": ["./src/*"]
+      }
+    },
+    "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
+  }
+  

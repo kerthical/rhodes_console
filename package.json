@@ -1,0 +1,19 @@
+{
+  "name": "rhodes_console",
+  "version": "0.0.1",
+  "description": "Chrome Extension for Arknights fans. New tab screen will be changed.",
+  "license": "WTFPL",
+  "workspaces": [
+    "packages/**/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
+  "dependencies": {
+    "turbo": "^1.7.0"
+  },
+  "devDependencies": {
+    "prettier": "^2.8.2"
+  }
+}
