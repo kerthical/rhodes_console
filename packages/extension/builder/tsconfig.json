@@ -2,10 +2,7 @@
   "extends": "config/tsconfig.json",
   "compilerOptions": {
     "module": "CommonJS",
-    "lib": [
-      "ESNext"
-    ],
+    "lib": ["ESNext"],
     "outDir": "build"
   }
 }
-  

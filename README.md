@@ -17,8 +17,8 @@ or removal without notice.**
 - [ ] Logo animation
 - [ ] Particles animation
 - [ ] Random Operator
-    - [ ] standing picture
-    - [ ] voice
+  - [ ] standing picture
+  - [ ] voice
 - [ ] Greetings to <doctor's name>
 - [ ] Latest news
 - [ ] Currently active event
@@ -64,7 +64,7 @@ process for submitting pull requests to us.
 
 ## Authors
 
-- **Kerthical** - *Initial work* - [Kerthical](https://github.com/kerthical)
+- **Kerthical** - _Initial work_ - [Kerthical](https://github.com/kerthical)
 
 ## License
 

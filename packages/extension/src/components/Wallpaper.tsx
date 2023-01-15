@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState } from "react";
 
 const Wallpaper = (props: { className: string }) => {
   const [wallpaper, setWallpaper] = useState<number>();
@@ -13,7 +13,7 @@ const Wallpaper = (props: { className: string }) => {
     <img
       className={props.className}
       src={`/images/wallpapers/${wallpaper}.jpg`}
-      alt=''
+      alt=""
     />
   );
 };

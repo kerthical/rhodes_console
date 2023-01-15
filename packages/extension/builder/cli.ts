@@ -21,7 +21,6 @@ export default async () => {
     }
   });
 
-  // find workspace root by looking for the .git folder
   let root = process.cwd();
   while (!fs.existsSync(`${root}/.git`)) {
     root = root.substring(0, root.lastIndexOf("/"));
@@ -30,7 +29,6 @@ export default async () => {
   const packageJson = JSON.parse(
     fs.readFileSync(`${root}/package.json`, "utf8")
   );
-
   const iconSizes = [16, 32, 48, 64, 128, 256, 512];
 
   fs.writeFileSync(
@@ -55,7 +53,7 @@ export default async () => {
 
   await Promise.all(
     iconSizes.map((size) =>
-      sharp("./icon.png").resize(size).toFile(`build/dist/icon-${size}.png`)
+      sharp(`./icon.png`).resize(size).toFile(`build/dist/icon-${size}.png`)
     )
   );
 

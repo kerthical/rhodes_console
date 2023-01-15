@@ -1,7 +1,7 @@
 name: Build
 on:
   push:
-    branches: [ master ]
+    branches: [master]
 jobs:
   release:
     runs-on: ubuntu-latest
@@ -10,7 +10,7 @@ jobs:
       - uses: actions/setup-node@v3
         with:
           node-version: 18
-          cache: 'npm'
+          cache: "npm"
       - name: Install dependencies
         run: npm ci && npx playwright install --with-deps
       - name: Build

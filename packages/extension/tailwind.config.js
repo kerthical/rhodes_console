@@ -1,16 +1,16 @@
 module.exports = {
-  content: ['./src/**/*.{jsx,tsx}'],
+  content: ["./src/**/*.{jsx,tsx}"],
   theme: {
     extend: {
       width: {
-        screen: '100dvw',
+        screen: "100dvw",
       },
       height: {
-        screen: '100dvh',
+        screen: "100dvh",
       },
     },
   },
-  plugins: [require('daisyui')],
+  plugins: [require("daisyui")],
   daisyui: {
     logs: false,
   },
